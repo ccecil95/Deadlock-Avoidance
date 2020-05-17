@@ -1,7 +1,11 @@
 
 //Hello everyone! I used the Bankers algorithm to make an example of Deadlock avoidance 
 #include <stdio.h>
-int main()
+#include <stddef.h>
+
+#include <stdlib.h>
+
+	int main()
 {
 	//P0, P1, P2, P3, P4 would be the name of the Processses
 	int a, b, c, d, e;
@@ -61,7 +65,23 @@ int main()
     printf(" P%d", ans[a - 1]); 
   
     return (0); 
-  
+    
+  int main()
+{
+    int iCounter;
+    
+    	printf("\nEnter a value for the counter\n");
+    	scanf("%d", &iCounter);
+    	
+    	while(iCounter != 0)
+    	{
+    		printf("\n\t%d", iCounter);
+    		iCounter--;
+    	}
+    	
+    	printf("\nCount down timer has expired\n");
+    	return 0;
+}
     // Reference for the code:  Deep Baldha (CandyZack) from geeksforgeeks.org
    } 
 
